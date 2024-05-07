@@ -1,6 +1,6 @@
 FROM debian:bookworm AS downloader
-ARG VERSION=2024.1.0
-ARG ONDSEL_VERSION=2024.1.0.35694
+ARG VERSION=2024.2.0
+ARG ONDSEL_VERSION=2024.2.0.37191
 
 RUN apt update
 RUN apt install -y wget
@@ -12,7 +12,7 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:arm64v8-debianbookworm
 
 # set version label
 ARG BUILD_DATE
-ARG VERSION=2024.1.0
+ARG VERSION=2024.2.0
 LABEL build_version="pag.dev version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="pagdot"
 
